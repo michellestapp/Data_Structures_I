@@ -26,6 +26,31 @@ class Implementation:
                            'last_name': 'Stapp',
                            'email_address': 'mstapp@rocketmail.com',
                            'phone_number': '505-301-8736'}
+        self.family_members = [{
+              'first_name':'Marcia',
+              'last_name' : 'Landau',
+              'relationship' : 'mother'
+            },
+            {
+                'first_name': "David",
+                'last_name' : "Landau",
+                'relationship' : 'father'
+            },
+            {
+                'first_name' : 'Alexis',
+                'last_name' : 'Stapp',
+                'relationship' : 'daughter'
+            },
+            {
+                'first_name' : 'Emmaleah',
+                'last_name' : 'Stapp' ,
+                'relationship' : 'daughter'
+            },
+            {
+                'first_name' : 'Jacob',
+                'last_name' : 'Stapp',
+                'relationship' : 'son'
+            }]
 
     def tuple(self):
         month_of_pi_day = 3
@@ -44,3 +69,24 @@ class Implementation:
         print(f"User Name: {self.data.get('first_name')} {self.data.get('last_name')}")
         print(f"Email Address: {self.data.get('email_address')}")
         print(f"Phone Number: {self.data.get('phone_number')}")
+
+#  Task 2: List of Dictionaries
+# Use a list to store the dictionary of your immediate family members, with each index of the list storing its own dictionary. 
+# Dictionary should contain the following keys:
+# First name
+# Last name
+# Relation to you
+
+# Once you have stored the List of Dictionary items, 
+# write a function/method that will iterate over the List and 
+# print off the First Name and Relation of each person in the List.   
+
+
+
+    def family(self):
+
+        print('\n  My Amazing Family! \n')
+        for i in range(len(self.family_members)-1):
+            print()
+            print(f" My {self.family_members[i]['relationship']} is {self.family_members[i]['first_name']}")
+        
