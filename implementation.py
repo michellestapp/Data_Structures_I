@@ -86,7 +86,7 @@ class Implementation:
     def family(self):
 
         print('\n  My Amazing Family! \n')
-        for i in range(len(self.family_members)-1):
+        for i in range(len(self.family_members)):
             print()
             print(f" My {self.family_members[i]['relationship']} is {self.family_members[i]['first_name']}")
         
