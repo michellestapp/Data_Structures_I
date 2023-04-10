@@ -30,9 +30,6 @@ class LinkedList:
                     
 
 
-    def add_node(self,list):
-        self.new_node = Node(list)
-
 # Defining the root_node value
         if self.root_node == None:
             self.root_node = self.new_node
