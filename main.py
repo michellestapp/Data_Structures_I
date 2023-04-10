@@ -19,10 +19,18 @@
 #       Phone Number
 
 from implementation import Implementation
+from linked_list import LinkedList
 
-task_1 = Implementation()
-task_1.tuple()
-task_1.set()
-task_1.dictionary()
-task_2 = Implementation()
-task_2.family()
+
+
+# task_1 = Implementation()
+# task_1.tuple()
+# task_1.set()
+# task_1.dictionary()
+# task_2 = Implementation()
+# task_2.family()
+
+my_linked_list = LinkedList()
+my_linked_list.append_node(5)
+my_linked_list.append_node(10)
+my_linked_list.append_node(43)
