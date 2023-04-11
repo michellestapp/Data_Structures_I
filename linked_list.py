@@ -53,10 +53,39 @@ class LinkedList:
 
 
             print(f"          Node Found: {in_list} \n")
-            return in_list    
+            return in_list
 
 
-                            
+        class BinaryNode:
+            def __init__(self) -> None:
+                self.root_node = None    
+
+
+            def append_node(self,list):
+                new_node = Node(list)
+
+                if self.root_node == None:
+                    self.root_node = new_node
+
+                else:
+                    current_node  = self.root_node
+
+                    while True:
+
+                        holding_node = new_node
+
+                        if holding_node <= current_node: 
+
+                            current_node.next_node = holding_node       
+
+                        if current_node.next_node == None:
+                            current_node.next_node = new_node
+                            break
+
+                        else:
+                            current_node = current_node.next_node
+                                
+                        
 
 
          
