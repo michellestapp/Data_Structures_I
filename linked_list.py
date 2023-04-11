@@ -13,30 +13,44 @@ class LinkedList:
 
         if self.root_node == None:
             self.root_node = new_node
+
         else:
             current_node  = self.root_node
             print(f" {self.root_node.list} ")
             while True:
-                current_node.next_node = new_node
-                print(f" {current_node.next_node.list}")
-
                 if current_node.next_node == None:
                     current_node.next_node = new_node
                     break
 
                 else:
                     current_node = current_node.next_node
-                    break
-                    
+                        
 
 
-# Defining the root_node value
+
+    def find_node(self, data_to_find):
+
+        current_node = Node(list)
+
+        in_list = False
         if self.root_node == None:
-            self.root_node = self.new_node
+            print(f" Search for node with value of {data_to_find}  \n")
+            print(f"          Node Found: {in_list} \n")
+        else:
+            current_node  = self.root_node
+            while in_list == False:
+            
+                if current_node.list == data_to_find:
+                    in_list = True
 
-        
+                else:
+                    current_node = current_node.next_node
+                    if current_node == None:
+                        break
 
 
+        print(f" Search for node with value of {data_to_find}  \n")
+        print(f"          Node Found: {in_list} \n")            
 
-    def find_node():
-        None
+
+         

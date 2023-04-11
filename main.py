@@ -34,3 +34,11 @@ my_linked_list = LinkedList()
 my_linked_list.append_node(5)
 my_linked_list.append_node(10)
 my_linked_list.append_node(43)
+my_linked_list.append_node(52)
+my_linked_list.append_node(25)
+
+my_linked_list.find_node(5)
+my_linked_list.find_node(24)
+my_linked_list.find_node(25)
+my_linked_list.find_node(52)
+
