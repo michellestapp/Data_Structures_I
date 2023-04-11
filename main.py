@@ -21,6 +21,30 @@
 from implementation import Implementation
 from linked_list import LinkedList
 
+class RunMain:
+    def __init__(self) -> None:
+        self.list = LinkedList()
+
+    def append_nodes(self):
+        print("\n Add a new node with the value of 5")
+        self.list.append_node(5)
+        print("\n Add a new node with the value of 10")
+        self.list.append_node(10)
+        print("\n Add a new node with the value of 24")
+        self.list.append_node(24)
+
+    def find_values(self):
+        print("\n Search for a node with the value of 10")
+        print(self.list.find_node(10))
+        print("\n Search for a node with the value of 22")
+        print(self.list.find_node(22))
+
+if __name__ == '__main__':
+    main = RunMain()
+    main.append_nodes()
+    main.find_values()
+
+
 
 
 # task_1 = Implementation()
@@ -30,15 +54,15 @@ from linked_list import LinkedList
 # task_2 = Implementation()
 # task_2.family()
 
-my_linked_list = LinkedList()
-my_linked_list.append_node(5)
-my_linked_list.append_node(10)
-my_linked_list.append_node(43)
-my_linked_list.append_node(52)
-my_linked_list.append_node(25)
+# my_linked_list = LinkedList()
+# my_linked_list.append_node(5)
+# my_linked_list.append_node(10)
+# my_linked_list.append_node(43)
+# my_linked_list.append_node(52)
+# my_linked_list.append_node(25)
 
-my_linked_list.find_node(5)
-my_linked_list.find_node(24)
-my_linked_list.find_node(25)
-my_linked_list.find_node(52)
+# my_linked_list.find_node(5)
+# my_linked_list.find_node(24)
+# my_linked_list.find_node(25)
+# my_linked_list.find_node(52)
 

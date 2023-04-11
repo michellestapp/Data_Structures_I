@@ -16,7 +16,7 @@ class LinkedList:
 
         else:
             current_node  = self.root_node
-            print(f" {self.root_node.list} ")
+
             while True:
                 if current_node.next_node == None:
                     current_node.next_node = new_node
@@ -42,6 +42,8 @@ class LinkedList:
             
                 if current_node.list == data_to_find:
                     in_list = True
+                    
+                    
 
                 else:
                     current_node = current_node.next_node
@@ -49,8 +51,12 @@ class LinkedList:
                         break
 
 
-        print(f" Search for node with value of {data_to_find}  \n")
-        print(f"          Node Found: {in_list} \n")            
+
+            print(f"          Node Found: {in_list} \n")
+            return in_list    
+
+
+                            
 
 
          
