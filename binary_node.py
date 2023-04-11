@@ -6,17 +6,17 @@ class Node:
         self.left = None
         self.right = None
 
+
+
+
+
 class BinaryNode:
     def __init__(self,root_node) -> None:
         self.root_node = Node(root_node)
-        
+
     def insert_node(self,data):
         new_node = Node(data)
 
-
-        # if self.root_node == None:
-        #     self.root_node = new_node
-        #     print(f" Root node is {self.root_node.data}")
         current_node = self.root_node
         while True:
             if new_node.data <= current_node.data:
@@ -42,3 +42,5 @@ class BinaryNode:
                     
     def search_for_node():
         None
+
+ 
