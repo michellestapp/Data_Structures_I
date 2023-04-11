@@ -40,7 +40,34 @@ class BinaryNode:
                 else:
                     current_node = current_node.right
                     
-    def search_for_node():
-        None
+    def search_for_node(self,search_value):
+
+        current_node = Node(search_value)
+        current_node = self.root_node
+        in_data_set = False
+        while in_data_set == False:
+
+            if current_node.data == search_value:
+                print('Node Found')
+                in_data_set = True
+
+            elif search_value < current_node.data:
+                # Look left
+                current_node = current_node.left
+            
+                if current_node == None:
+                    # Not found
+                
+                    print(current_node)
+                    
+                    break
+                
+            else:
+                current_node = current_node.right
+
+                if current_node == None:
+                    print(f' No more right numbers in list:  {current_node.data}')
+                    break
+
 
  
