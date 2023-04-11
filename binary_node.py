@@ -18,28 +18,37 @@ class BinaryNode:
         new_node = Node(data)
 
         current_node = self.root_node
+
         while True:
             if new_node.data <= current_node.data:
-                print('Add left node')
             
                 if current_node.left == None:
-                    current_node.left = new_node
-                    print(current_node.left.data)
-                    break
+                 
+                   
+                   print(f" Node with data {new_node.data} created")
+                
+                   break
 
                 else:
+                    new_node.right = current_node.data
                     current_node = current_node.left
                 
             else:
-                print('Add right node')
+
                 if current_node.right == None:
-                    current_node.right= new_node
-                    print(current_node.right.data)
+                    
+                 
+                    print(f" Node with data {new_node.data} created")
                     break
 
                 else:
+                   
                     current_node = current_node.right
-                    
+                
+
+        print(f' Node {current_node.data} updated with a left of {new_node.left} and a right of {new_node.right} ')  
+
+                  
     def search_for_node(self,search_value):
 
         current_node = Node(search_value)
@@ -50,6 +59,7 @@ class BinaryNode:
             if current_node.data == search_value:
                 print('Node Found')
                 in_data_set = True
+                
 
             elif search_value < current_node.data:
                 # Look left
@@ -66,8 +76,9 @@ class BinaryNode:
                 current_node = current_node.right
 
                 if current_node == None:
-                    print(f' No more right numbers in list:  {current_node.data}')
+                    
                     break
+            return in_data_set
 
 
  

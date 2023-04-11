@@ -54,7 +54,7 @@ run_binary.insert_node(15)
 run_binary.insert_node(4)
 run_binary.insert_node(24)
 
-run_binary.search_for_node(26)
+#run_binary.search_for_node(26)
 
 
 # task_1 = Implementation()
