@@ -48,9 +48,10 @@ from binary_node import BinaryNode
 from binary_node import Node
 
 run_binary = BinaryNode(10)
+run_binary.insert_node(15)
 run_binary.insert_node(5)
 run_binary.insert_node(3)
-run_binary.insert_node(15)
+
 run_binary.insert_node(4)
 run_binary.insert_node(24)
 
